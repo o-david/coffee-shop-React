@@ -1,4 +1,5 @@
 import './App.css'
+import { Basket, Button, DownArrow, Like, Logo, pngaaa } from './assets';
 
 function App() {
 
@@ -6,17 +7,17 @@ function App() {
       <div id='body'>
     <header>
       <div id="header1">
-        <img id="img1" src="res/Logo.svg" alt="" />
-        <p id="headleft">
-          <img id="sea" src="res/pngaaa.com-25432.png" alt="" /> Search
-          something here....
-        </p>
-        <p id="headright">
+        <img id="img1" src={Logo} alt="" />
+        <div id="headleft">
+          <img id="sea" src={pngaaa} alt="" /> 
+          <input type="text" className='top-input' placeholder='Search something here....' />
+        </div>
+        <div id="headright">
           <button id="but1">search</button>
-          <img src="res/Basket.svg" alt="" />
-          <img src="res/Button.svg" alt="" />
-          <img src="res/Like.svg" alt="" />
-        </p>
+          <img src={Basket} alt="" />
+          <img src={Button} alt="" />
+          <img src={Like} alt="" />
+        </div>
       </div>
       <div id="straightline"></div>
       <nav>
@@ -24,7 +25,7 @@ function App() {
         <a href="About">About</a>
         <a href="Contact" style={{display: "inline-block"}}>
           Contact
-          <img src="res/chevron/down.png" alt="" style={{verticalAlign: "middle"}} />
+          <img src={DownArrow} alt="" style={{verticalAlign: "middle"}} />
         </a>
       </nav>
       <section id="sec1">
@@ -226,6 +227,7 @@ function App() {
           </div>
           </section>
           <section id="sec8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2423.124667979138!2d-0.11627932047893101!3d51.50560065240711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1710236556065!5m2!1sen!2sng" width="600" height="450" style={{border:"0", width:"100%"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             <img src="res/Map.svg" alt=""/>
           </section>
           <section>
